@@ -1,6 +1,7 @@
 #analyzeButton{
 	border-radius: 1rem;
-	color: yellow;
+	background-color: yellow;
+	color: white;
 	width: 50%;
 	height: 50%;
 	margin: 0 auto;
