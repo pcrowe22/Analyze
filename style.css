@@ -6,3 +6,8 @@
 	height: 50%;
 	margin: 0 auto;
 }
+#reset{
+	background-color: grey;
+	width: 30px;
+	height: 10px;
+}
