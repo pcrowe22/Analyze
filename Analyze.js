@@ -8,5 +8,6 @@ function analyze() {
 }
 function reset() {
 	localStorage.setItem('myBits', 0);
+	myBits=0;
 	document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 }
