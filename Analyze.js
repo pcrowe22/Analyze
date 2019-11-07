@@ -1,10 +1,13 @@
-var myBits = 0;
-var myBytes = 0;
-analyze();
+
 if (localStorage.getItem("myBits")>0){
 	myBits=localStorage.getItem("myBits");
 	myBytes=localStorage.getItem("myBytes");
+} else {
+	var myBits = 0;
+	var myBytes = 0;
 }
+document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
+document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
 function analyze() {
 	localStorage.setItem('myBits', myBits++);
 	document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
@@ -22,6 +25,8 @@ function bitToByte() {
 		myBits -=8;
 		localStorage.setItem('myBytes', myBytes);
 		localStorage.setItem('myBits', myBits);
+		document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
+		document.getElementById("bits").innerHTHML = localStorage.getItem("myBits");
 	} else {
 		document.getElementById('errorWindow', "Not enough bits");
 	}
