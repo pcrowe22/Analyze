@@ -1,9 +1,9 @@
 var myBits = 0;
 function analyze() {
-	localStorage.setItem('bits', myBits++;);
+	localStorage.setItem('myBits', myBits++;);
 	document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 }
 function reset() {
-	localStorage.setItem('bits', 0);
+	localStorage.setItem('myBits', 0);
 	document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 }
