@@ -1,13 +1,19 @@
 #analyzeButton{
 	border-radius: 1rem;
+	font-size: 2rem;
 	background-color: yellow;
 	color: white;
 	width: 50%;
-	height: 50%;
+	height: 150px;
 	margin: 0 auto;
+	text-align: center;
+	vertical-align: center;
+	
 }
 #reset{
 	background-color: grey;
 	width: 60px;
 	height: 60px;
+	text-align: center;
+	vertical-align: center;
 }
