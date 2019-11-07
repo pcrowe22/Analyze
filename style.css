@@ -23,3 +23,11 @@
 	height: 60px;
 	text-align: center;
 }
+#bitToByte{
+	background-color: green;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	vertical-align: center;
+	display: block;
+}

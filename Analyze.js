@@ -1,5 +1,6 @@
 var myBits = 0;
 var myBytes = 0;
+analyze();
 if (localStorage.getItem("myBits")>0){
 	myBits=localStorage.getItem("myBits");
 	myBytes=localStorage.getItem("myBytes");
