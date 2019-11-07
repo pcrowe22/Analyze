@@ -7,12 +7,12 @@
 	<link href="style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-	<p id="analyzeButton" onclick="analyze()">Analyze</p>
+	<p id="analyzeButton" onclick="ControlPanel.analyze()">Analyze</p>
 	<p>Bits: <span id="bits"></span></p>
 	<p>Bytes: <span id="bytes"></span></p>
 	<div id="buttons">
-		<p id="restart" onclick="restart()">Reset</p>
-		<div id="bitToByte" onclick="bitToByte()">To Byte</div>
+		<p id="restart" onclick="ControlPanel.restart()">Reset</p>
+		<div id="bitToByte" onclick="ControlPanel.bitToByte()">To Byte</div>
 	</div>
 	<div id="errorWindow"></div>
 </body>
