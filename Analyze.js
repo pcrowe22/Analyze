@@ -6,8 +6,8 @@ if (localStorage.getItem("myBits")>0){
 	var myBits = 0;
 	var myBytes = 0;
 }
-document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
-document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
+document.getElementById("bits").innerHTML = ]myBits;
+document.getElementById("bytes").innerHTML = myBytes;
 function analyze() {
 	localStorage.setItem('myBits', myBits++);
 	document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
