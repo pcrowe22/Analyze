@@ -1,10 +1,11 @@
-
+var myBits;
+var myBytes
 if (localStorage.getItem("myBits")>0){
 	myBits=localStorage.getItem("myBits");
 	myBytes=localStorage.getItem("myBytes");
 } else {
-	var myBits = 0;
-	var myBytes = 0;
+	myBits = 0;
+	myBytes = 0;
 }
 document.getElementById("bits").innerHTML = myBits;
 document.getElementById("bytes").innerHTML = myBytes;
