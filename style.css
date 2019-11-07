@@ -10,18 +10,18 @@
 	vertical-align: center;
 	
 }
+#buttons{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
 #restart{
 	background-color: grey;
 	width: 60px;
 	height: 60px;
 	text-align: center;
 	vertical-align: center;
-}
-#errorWindow{
-	border: 3px solid red;
-	width: 100px;
-	height: 60px;
-	text-align: center;
+	display: inline-block;
 }
 #bitToByte{
 	background-color: green;
@@ -29,5 +29,12 @@
 	height: 60px;
 	text-align: center;
 	vertical-align: center;
-	display: block;
+	display: inline-block;
+}
+#errorWindow{
+	border: 3px solid red;
+	width: 100px;
+	height: 60px;
+	text-align: center;
+	margin: 1rem;
 }
