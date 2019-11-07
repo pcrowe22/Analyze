@@ -10,7 +10,7 @@ if (localStorage.getItem("myBits")>0){
 document.getElementById("bits").innerHTML = myBits;
 document.getElementById("bytes").innerHTML = myBytes;
 if (myBits>=8) {
-	docuemnt.getElementById('myBytes').style.display = "inline-block";
+	docuemnt.getElementById('bytes').style.display = "inline-block";
 }
 function analyze() {
 	localStorage.setItem('myBits', myBits++);
@@ -21,8 +21,9 @@ function restart() {
 	localStorage.setItem('myBytes', 0);
 	myBits=0;
 	myBytes=0;
-	document.getElementById('myBytes').style.display = "none";
+	document.getElementById('bytes').style.display = "none";
 	document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
+	document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
 }
 function bitToByte() {
 	if (myBits>=8){
