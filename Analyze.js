@@ -58,8 +58,8 @@ let ControlPanel = {
 			bitLoopStrength++;
 			myBytes -=8;
 			localStorage.setItem("myBytes", myBytes);
-			localStorage.setItem("bitLoopStrength", bitLoopStrength);
-			document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("bitLoopStrength");
+			localStorage.setItem("bitLoopStrength", myBitLoopStrength);
+			document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("storBitLoopStrength");
 			document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
 		} else {
 			document.getElementById('errorWindow').innerHTML = "Not enough bytes";
