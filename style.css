@@ -23,8 +23,7 @@
 	vertical-align: center;
 	display: inline-block;
 }
-#bitToByte{
-	background-color: green;
+#conversionButton{
 	width: 60px;
 	height: 60px;
 	text-align: center;
