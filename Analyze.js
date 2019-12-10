@@ -1,15 +1,18 @@
 var myBits;
 var myBytes;
+var myBitLoopStrength;
 if (localStorage.getItem("myBits")>=0){
 	myBits=localStorage.getItem("myBits");
 	myBytes=localStorage.getItem("myBytes");
+  myBitLoopStrength = localStorage.getItem("storBitLoopStrength");
 } else {
 	myBits = 0;
 	myBytes = 0;
+  myBitLoopStrength = 0;
 }
 document.getElementById("bits").innerHTML = myBits;
 document.getElementById("bytes").innerHTML = myBytes;
-
+document.getElementById("bitLoopStrength").innerHTML = myBitLoopStrength;
 
 let ControlPanel = {
 	analyze: function() {
@@ -23,16 +26,18 @@ let ControlPanel = {
 	restart: function() {
 		localStorage.setItem('myBits', 0);
 		localStorage.setItem('myBytes', 0);
+    localStorage.setItem('myBitLoopStrength', 0);
 
 		myBits=0;
 		myBytes=0;
-		bitLoopStrength=0;
+		myBitLoopStrength=0;
 
 		document.getElementById('bytes').style.display = "none";
 		document.getElementById('bitLoop').style.display = "none";
 		document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 		document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
-	},
+    document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("myBitLoopStrength");
+  },
 	bitToByte: function() {
 		if (myBits>=8){
 			myBytes++;
