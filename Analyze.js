@@ -66,3 +66,6 @@ let ControlPanel = {
 		}
 	}
 }
+if (myBitLoopStrength > 0) {
+  setTimeout(myBits++, 10000/myBitLoopStrength);
+}
