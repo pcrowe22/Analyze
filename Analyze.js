@@ -16,7 +16,7 @@ let ControlPanel = {
 		localStorage.setItem('myBits', myBits++);
 		document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 		if (myBits>=8) {
-			docuemnt.getElementById('bytes').style.display = "inline-block";
+			document.getElementById('bytes').style.display = "inline-block";
 		}
 	},
 	restart: function() {
