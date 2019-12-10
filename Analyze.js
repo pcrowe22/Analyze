@@ -58,7 +58,7 @@ let ControlPanel = {
 			bitLoopStrength++;
 			myBytes -=8;
 			localStorage.setItem("myBytes", myBytes);
-			localStorage.setItem("bitLoopStrength", myBitLoopStrength);
+			localStorage.setItem("storBitLoopStrength", myBitLoopStrength);
 			document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("storBitLoopStrength");
 			document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
 		} else {
