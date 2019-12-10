@@ -55,7 +55,7 @@ let ControlPanel = {
 	},
 	bitLoop: function() {
 		if (myBytes>=8){
-			bitLoopStrength++;
+			myBitLoopStrength++;
 			myBytes -=8;
 			localStorage.setItem("myBytes", myBytes);
 			localStorage.setItem("storBitLoopStrength", myBitLoopStrength);
