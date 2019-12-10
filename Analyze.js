@@ -26,7 +26,7 @@ let ControlPanel = {
 	restart: function() {
 		localStorage.setItem('myBits', 0);
 		localStorage.setItem('myBytes', 0);
-    localStorage.setItem('myBitLoopStrength', 0);
+    localStorage.setItem('storBitLoopStrength', 0);
 
 		myBits=0;
 		myBytes=0;
