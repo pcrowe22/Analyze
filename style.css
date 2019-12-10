@@ -23,7 +23,7 @@
 	vertical-align: center;
 	display: inline-block;
 }
-#conversionButton{
+.conversionButton{
 	width: 60px;
 	height: 60px;
 	text-align: center;
