@@ -1,6 +1,7 @@
 var myBits;
 var myBytes;
 var myBitLoopStrength;
+var bitInterval;
 if (localStorage.getItem("myBits")>=0){
 	myBits=localStorage.getItem("myBits");
 	myBytes=localStorage.getItem("myBytes");
@@ -11,7 +12,7 @@ if (localStorage.getItem("myBits")>=0){
   myBitLoopStrength = 0;
 }
 if (localStorage.getItem("storBitLoopStrength")>0){
-  window.setInterval(changeBits, 10000/myBitLoopStrength);
+  bitInterval = setInterval(changeBits, 10000/myBitLoopStrength);
 }
 document.getElementById("bits").innerHTML = myBits;
 document.getElementById("bytes").innerHTML = myBytes;
@@ -41,7 +42,7 @@ let ControlPanel = {
 		document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
     document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("myBitLoopStrength");
   
-    window.clearInterval();
+    clearInterval(bitInterval);
   },
 	bitToByte: function() {
 		if (myBits>=8){
@@ -66,7 +67,7 @@ let ControlPanel = {
 			localStorage.setItem("storBitLoopStrength", myBitLoopStrength);
 			document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("storBitLoopStrength");
 			document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
-      window.setInterval(changeBits, 10000/myBitLoopStrength);
+      bitInterval = setInterval(changeBits, 10000/myBitLoopStrength);
     } else {
 			document.getElementById('errorWindow').innerHTML = "Not enough bytes";
 		}
