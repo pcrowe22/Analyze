@@ -10,6 +10,9 @@ if (localStorage.getItem("myBits")>=0){
 	myBytes = 0;
   myBitLoopStrength = 0;
 }
+if (localStorage.getItem("storBitLoopStrength")>0){
+  window.setInterval(changeBits, 10000/myBitLoopStrength);
+}
 document.getElementById("bits").innerHTML = myBits;
 document.getElementById("bytes").innerHTML = myBytes;
 document.getElementById("bitLoopStrength").innerHTML = myBitLoopStrength;
