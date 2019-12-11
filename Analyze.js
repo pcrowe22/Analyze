@@ -37,6 +37,8 @@ let ControlPanel = {
 		document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 		document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
     document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("myBitLoopStrength");
+  
+    window.clearInterval();
   },
 	bitToByte: function() {
 		if (myBits>=8){
@@ -61,11 +63,9 @@ let ControlPanel = {
 			localStorage.setItem("storBitLoopStrength", myBitLoopStrength);
 			document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("storBitLoopStrength");
 			document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
-		} else {
+      window.setInterval(myBits++, 10000/myBitLoopStrength);
+    } else {
 			document.getElementById('errorWindow').innerHTML = "Not enough bytes";
 		}
 	}
-}
-if (myBitLoopStrength > 0) {
-  setTimeout(myBits++, 10000/myBitLoopStrength);
 }
