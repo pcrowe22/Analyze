@@ -15,16 +15,8 @@
 	width: 960px;
 	margin: 0 auto;
 }
-#restart{
-	background-color: grey;
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	vertical-align: center;
-	display: inline-block;
-}
 .conversionButton{
-	width: 60px;
+	width: 100px;
 	height: 60px;
 	text-align: center;
 	vertical-align: center;
