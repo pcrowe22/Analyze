@@ -63,9 +63,14 @@ let ControlPanel = {
 			localStorage.setItem("storBitLoopStrength", myBitLoopStrength);
 			document.getElementById("bitLoopStrength").innerHTML = localStorage.getItem("storBitLoopStrength");
 			document.getElementById("bytes").innerHTML = localStorage.getItem("myBytes");
-      window.setInterval(myBits++, 10000/myBitLoopStrength);
+      window.setInterval(changeBits, 10000/myBitLoopStrength);
     } else {
 			document.getElementById('errorWindow').innerHTML = "Not enough bytes";
 		}
 	}
+}
+function changeBits() {
+  myBits++;
+  localStorage.setItem("myBits", myBits);
+  document.getElementById("bits").innerHTML = localStorage.getItem("myBits");
 }
