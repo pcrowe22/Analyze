@@ -15,6 +15,11 @@
 		<div class="conversionButton" style="background-color: grey" id="restart" onclick="ControlPanel.restart()">Reset</div>
 		<div class="conversionButton" style="background-color: green;" id="bitToByte" onclick="ControlPanel.bitToByte()">To Byte</div>
     <div class="conversionButton" style="background-color: blue;"id = "bitLoop" onclick="ControlPanel.bitLoop()">New Bit Loop</div>
+    <div class="conversionButton" style="background-color: pink;" id="asciiSwitch" onclick="ControlPanel.showASCII()">
+      <p>Switch to ASCII</p>
+      <p>Cost: <span id="asciiPriceTag"></span></p>
+    </div>
+    <div class="conversionButton" style="background-color: red; color: white;" id="hardRestart" onclick="ControlPanel.hardRestart()">Hard Reset</div>
 	</div>
 	<div id="errorWindow"></div>
 </body>
