@@ -100,7 +100,7 @@ let ControlPanel = {
     } else {
       document.getElementById('errorWindow').innerHTML = "Not enough bits";
     }
-  }
+  },
   hardRestart: function() {
     ControlPanel.restart();
     totalBits=0;
